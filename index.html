@@ -9,7 +9,7 @@
     </head>
     <body>
         <!--Navbar-->
-        <nav class = "navbar navbar-expand-sm navbar-light bg-light">
+        <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class = "navbar-brand" href="#">Personas & Storyboarding</a>
                 <div class = "collapse navbar-collapse">
@@ -24,27 +24,29 @@
         </nav>
 
         <!--Main page-->
-        <div class = "d-flex flex-column justify-content-center align-items-center">
-            <h1 class = "display-1">CIT Coffee Machine</h1>
+        <div class = "d-flex flex-column justify-content-center align-items-center coffee_cup">
+            <!-- <img src = "img/coffee.jpg" alt = "coffee cup image">  -->
+            <h1 class = "display-1 text-dark" style = "opacity:1;">CIT Coffee Machine</h1>
         </div>
 
 
          <!--Interface-->
-        <div id = "interface" class = "container-fluid">
-            <div class ="row justify-content-center">
+        <div id = "interface" class = "container-fluid section">
+            <div class ="row text-center justify-content-center">
                 <h2>Coffee Machine Sketch and Descriptions</h2>
                 <div class = "col-6">
-                    <img src = "img/Annotation.png" alt = "coffee machine annotation" style = "width:30rem">
+                    <h2 style="font-size:1.5rem">Coffee Machine Sketch</h2>
+                    <img src = "img/Annotation.png" alt = "coffee machine annotation" style = "width:30rem" class = "annotation">
                 </div>
-                <div class = "col-6">
-                    <h2>Descriptions</h2>
+                <div class = "col-6 content">
+                    <h2 style="font-size:1.5rem">Descriptions</h2>
                     <div class = "description">
                         <ol>
                             <li>The user can open the pod compartment (7) by pressing this button.</li>
-                            <li>This display gives users directions.</li>
-                            <li>The user can press this button to get hot water instead of coffee</li>
+                            <li>This display gives directions to users at different steps of coffee making.</li>
+                            <li>The user can press this button to get hot water instead of coffee.</li>
                             <li>Pressing this button brews espresso.</li>
-                            <li>By pressing one of these three buttons, the users can set the strength of their coffee. Given the same amount of ground coffee, “Mild” setting dilutes the coffee more with water than the “Bold” setting does.</li>   
+                            <li>By pressing one of these three buttons, the user can set the strength of their coffee. Given the same amount of ground coffee, the “Mild” setting dilutes the coffee more with water than the “Bold” setting does.</li>   
                             <li>Pressing this button brews iced coffee. By default, the machine brews hot coffee.</li>
                             <li>This compartment opens when the user presses the “Open” button. Inside the compartment, there`s a tray where the user can place a pod.</li>
                             <li>This dispenses coffee.</li>
@@ -57,28 +59,30 @@
         </div>
 
         <!--Observations-->
-        <div id = "observations" class = "container-fluid">
-            <div class = "row">
-                <h2>Observations</h2>
-                <p style = "font-size:1.5rem">I interviewed 3 users, all of whom were graduate students at Brown about the coffee machine in CIT on the 4th floor.
-                    All three users drank coffee on a daily basis and had made coffee using their own tools. 
+        <div id = "observations" class = "container-fluid section">
+            <h2 class = "text-center">Observations</h2>
+            <div class = "row text-center justify-content-center content">
+                <p style = "font-size:1.5rem">I interviewed 3 users about the coffee machine in CIT on the 4th floor. 
+                    All three users were graduate students at Brown and drank coffee on a daily basis. 
+                    Although two out of the three users had never used the coffee machine before, 
+                    all three of them had made coffee using their own tools. 
                 </p>
                 <div class = "col-6 description">
                     <p style = "font-size:1.5rem">Questions</p>
                     <ul>
                         <li>Have you used this coffee machine before?</li>
                         <li>What do you use to make your coffee (e.g., french press, espresso machine)?</li>
-                        <li>What are some pros and cons of making coffee with this machine as opposed to using other methods you`ve used to make your coffee?</li>
-                        <li>What are some things you like and dislike about the UI design of this coffee machine?</li>
-                        <li>What are some satisfactory and unsatisfactory qualities of the coffee made from this machine?</li>
+                        <li>What are pros and cons of making coffee with this machine as opposed to using other methods you've used to make your coffee?</li>
+                        <li>What are things you like and dislike about the UI design of this coffee machine?</li>
+                        <li>What are satisfactory and unsatisfactory qualities of coffee made from this machine?</li>
                     </ul>
                 </div>
                 <div class = "col-6 description">
                     <p style="font-size:1.5rem">Summary</p>
                     <ul>
                         <li>All three users use non-automatic ways to make coffee such as french press and instant coffee powder when they are not in CIT. They liked that the machine made coffee more quickly than the methods they used.</li>
-                        <li>Two out of the three interviewed users had never used the coffee machine before. The new users said they could not initially figure out that the machine made coffee with pods that were stored in shelves above the machine. They also said they had trouble figuring out how to open the pod compartment.</li>
-                        <li>The two new users pushed the pod compartment with their hand to close it despite the warning message under the compartment not to do so.</li>
+                        <li>The two new users said they could not initially figure out that the machine made coffee with pods that were stored in shelves above the machine. They also said they had trouble figuring out how to open the pod compartment.</li>
+                        <li>The two new users pushed the pod compartment with their hand to close it despite the warning message under the compartment telling them not to do so.</li>
                         <li>Two out of the three users said the coffee that the machine made was too acidic or smelled unpleasant.</li>
                         <li>All three users pointed out that the “Open” button for opening the pod compartment should stand out more from other buttons and clearly indicate whether it opens the pod compartment or the compostable bin.</li>
                     </ul>
@@ -88,67 +92,78 @@
 
 
         <!--Personas-->
-        <div id = "personas" class = "container-fluid">
-            <div class = "row text-center justify-content-center">
+        <div id = "personas" class = "container-fluid section">
+            <div class = "row text-center justify-content-center content">
                 <h2>Personas</h2>
                 <div class = "col-6">
                     <p style = "font-size:1.5rem">Persona 1: Eva Gormet</p>
                     <p style = "font-size:1rem">Eva is a first-year masters student who has never used the CIT coffee machine and is picky about how her coffee tastes and smells.</p>
-                    <img src="img/Persona_1.png" alt = "persona 1" style = "width:30rem">
+                    <img src="img/Persona_1.png" alt = "persona 1" style = "width:30rem" class = "persona">
                 </div>
                 <div class = "col-6">
-                    <p style = "font-size:1.5rem">Persona 2: Jane Siu</p>
+                    <p style = "font-size:1.5rem">Persona 2: Jane Goodcoffee</p>
                     <p style = "font-size:1rem">Jane is a second-year PhD student who uses the coffee machine on a daily basis although she doesn`t like the taste and smell of its coffee.</p>
-                    <img src="img/Persona_2.png" alt = "persona 1" style = "width:30rem">
+                    <img src="img/Persona_2.png" alt = "persona 2" style = "width:30rem"  class = "persona">
                 </div>
             </div>
         </div>
+        <!---Icons: 
+            "Female Profile", Visual Glow, https://thenounproject.com/icon/female-profile-2592871/
+            "Female Profile", Visual Glow, https://thenounproject.com/icon/female-profile-2592870/
+        -->
+
+
 
         <!--Storyboard-->
-        <div id = "storyboard" class = "container-fluid"  style = "background-color: brown;">
-            <div class = "row text-center justify-content-center">
+        <div id = "storyboard" class = "container-fluid section">
+            <div class = "row text-center justify-content-center content">
                 <h2>Storyboard</h2>
-
+                <p style = "font-size:1.5rem">This storyboard shows Eva's experience of making coffee with the CIT coffee machine.</p>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-1.png" alt = "frame 1" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva discovers a coffee machine in CIT and wants to get some coffee from it. </p>
+                    <p style = "font-size:1rem">1. Eva discovers a coffee machine in CIT and wants to get some coffee from it. </p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-2.png" alt = "frame 2" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">She has never used the machine before and is not sure how it works.</p>
+                    <p style = "font-size:1rem">2. She has never used the machine before and is not sure how it works.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-3.png" alt = "frame 3" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Another graduate student who was near Eva tells her that the machine works with coffee pods.</p>
+                    <p style = "font-size:1rem">3. Another graduate student who was near Eva tells her that the machine works with coffee pods.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-4.png" alt = "frame 4" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva finds a coffee pod and tries to figure out where to put in the pod. She tries pressing the "Open" button.</p>
+                    <p style = "font-size:1rem">4. Eva finds a coffee pod and tries to figure out where to put in the pod. She tries pressing the "Open" button.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-5.png" alt = "frame 5" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Pressing the "Open" button opens the pod compartment.</p>
+                    <p style = "font-size:1rem">5. Pressing the "Open" button opens the pod compartment.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-6.png" alt = "frame 6" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva puts in her coffee pod but realizes that it's upside down.</p>
+                    <p style = "font-size:1rem">6. Eva puts in her coffee pod but realizes that it's upside down.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-7.png" alt = "frame 7" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva closes the pod compartment with hand and sees the warning message under it telling her not to do so. She hopes she didn't break the machine.</p>
+                    <p style = "font-size:1rem">7. Eva closes the pod compartment with hand and sees the warning message under it telling her not to do so. She hopes she didn't break the machine.</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-8.png" alt = "frame 8" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva isn't sure what exactly "Mild", "Medium", and "Strong" settings mean. She tries pressing "Medium".</p>
+                    <p style = "font-size:1rem">8. Eva isn't sure what exactly "Mild", "Medium", and "Strong" settings mean. She tries pressing "Medium".</p>
                 </div>
                 <div class = "col-6 col-md-4 col-sm-6">
                     <img src="img/frame-9.png" alt = "frame 9" class="frame" style = "width:25rem">
-                    <p style = "font-size:1rem">Eva drinks the coffee the machine made. She hates the coffee.</p>
+                    <p style = "font-size:1rem">9. Eva drinks the coffee the machine made. She hates the coffee.</p>
                 </div>
 
             </div>
         </div>
+         <!---Icons: 
+            "Female Profile", Visual Glow, https://thenounproject.com/icon/female-profile-2592871/
+            "Female Profile", Visual Glow, https://thenounproject.com/icon/female-profile-2592863/
 
+            I made this storyboard using Boord.
+        -->
 
     </body>
 </html>
