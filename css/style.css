@@ -1,0 +1,12 @@
+h1, h2{
+    font-family: 'Helvetica';
+}
+
+body{
+    font-family: 'Helvetica';
+    /* background-color: #271300; */
+}
+
+.description{
+    font-size:1.3rem;
+}
